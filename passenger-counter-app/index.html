@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>People Counter Application</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
 </head>
-<body>
+<body id="body">
     <h1>People Counter Application</h1>
     <br>
-    <h3>Total People: <span id="count">0</span></h3>
+    <h3>Total Count: <span id="count">0</span></h3>
     <br>
     <div class="buttons">
         <button id="decrease">–</button>
         <button id="increase">+</button>
     </div>
-    <button id="save">Save</button>
-    <button type="reset">Reset</button>
+    <div class="count">
+        <button id="save">Save Count</button>
+        <button id="reset" type="reset">Reset Count</button>
+    </div>
     <br>
-    <h3>Saved Values: <span id="saved"></span></h3>
+    <h3>Saved Values: &nbsp;<span id="saved"></span></h3>
+    <button id="reset-saved" type="reset">Reset Saved</button>
 </body>
 </html>
